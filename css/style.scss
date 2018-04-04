@@ -13,12 +13,25 @@ body{
 	min-height: 100%;
 }
 #show_video{
-	padding: .5em 2em;
+	font-size: 1.1em;
+	padding: .5em 1em;
 	background-color: darken(#0A50FA, 10);
 	color: #fff;
+	text-decoration: none;
 	display: block;
 	&:hover{
 		background-color: lighten(#0A50FA, 10);
+	}
+	&:before{
+		content: '';
+		background: url("../img/play.svg") no-repeat;
+		background-position: 50% 50%;
+		vertical-align: middle;
+		margin-top: -.1em;
+		margin-right: .5em;
+		display: inline-block;
+		height: 1em;
+		width: 1em;
 	}
 }
 #popup{
@@ -48,17 +61,14 @@ body{
 	}
 }
 .counter{
-	// font-weight: bold;
 	display: block;
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: 300;
 }
 h1{
-	// font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
-	font-size: 3em;
+	font-size: 2em;
 	font-weight: 300;
-	/* font-weight: 900; */
 }
 h2{
 	font-weight: 400;
