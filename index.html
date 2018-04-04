@@ -6,7 +6,7 @@
 	<title>"ДZЕРКАЛО МЕDІА" – Змінюється світ – Змінюємось ми</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<link rel="shortcut icon" href="img/favicon.png">
 	<meta name="description" content="" />
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/style.css" />
@@ -15,7 +15,7 @@
 
 <body>
 	<div class="title">
-		<img src="img/logo.svg" class="logo" alt="logo">
+	<img src="img/logo.svg" class="image_logo" alt="logo">
 		<div class="text">
 			<h1>Змінюється світ – змінюємось ми</h1>
 			<h2>Відкриття кращого вже <span class="counter">07.04.2018 12:00:00</span></h2>
@@ -49,8 +49,9 @@
 			$(this).html('сьогодні')
 				.parent().addClass('disabled');
 		});
-	$("#show_video, .fade").click(function(){
+	$("#show_video, .fade").click(function(e){
 		$("#popup").toggleClass("shown");
+		e.preventDefault();
 	})
 </script>
 
