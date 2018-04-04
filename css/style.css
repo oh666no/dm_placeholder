@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,700&subset=cyrillic');
+html, body{
+	height: 100%;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Open Sans', sans-serif;
+	background: linear-gradient(to bottom right, #fff, #0A50FA);
+	color: #333;
+}
+h1, h2{
+	/* margin: 0; */
+}
+.counter{
+	font-weight: bold;
+}
+h1{
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	/* font-weight: 900; */
+}
+h2{
+	font-weight: 400;
+}
+.logo{
+	max-width: 20%;
+	margin-right: 2em;
+}
+.title{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	white-space: nowrap;
+	margin-bottom: 2em;
+}
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}

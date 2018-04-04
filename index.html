@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Start</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+	<div class="title">
+		<img src="img/logo.svg" class="logo" alt="logo">
+		<div class="text">
+			<h1>Змінюється світ – змінюємось ми</h1>
+			<h2>Відкриття кращого вже <span class="counter">07.04.2018 12:00:00</span></h2>
+		</div>
+	</div>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/amqUxpy9Jfo?rel=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script>
+	$('.counter').countdown('2018/04/07 12:00:56')
+		.on('update.countdown', function(event) {
+			var format = '%-H год %M хв %S сек';
+			if (event.offset.totalDays > 0) {
+				if (event.offset.totalDays > 4){
+					format = '%-d %!d:день,днів; ' + format;
+				} else {
+					format = '%-d %!d:день,дні; ' + format;
+				}
+			}
+			if (event.offset.weeks > 0) {
+				format = '%-w week%!w ' + format;
+			}
+			$(this).html('через '+event.strftime(format));
+		})
+		.on('finish.countdown', function(event) {
+			$(this).html('сьогодні')
+				.parent().addClass('disabled');
+
+		});
+</script>
+
+</html>
