@@ -24,7 +24,7 @@
 	<a href="#" id="show_video">Дивитись презентацію</a>
 	<div id="popup">
 		<div class="fade"></div>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/amqUxpy9Jfo?rel=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 	</div>
 </body>
 <script src="js/jquery.min.js"></script>
@@ -50,6 +50,12 @@
 				.parent().addClass('disabled');
 		});
 	$("#show_video, .fade").click(function(e){
+
+		var shit = '<iframe width="560" height="315" src="https://www.youtube.com/embed/amqUxpy9Jfo?rel=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+		$("#popup").append(shit);
+		if ($("#popup").hasClass("shown")){
+			$("#popup").find("iframe").remove();
+		}
 		$("#popup").toggleClass("shown");
 		e.preventDefault();
 	})
