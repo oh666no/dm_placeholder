@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 247.43 225.94"><defs><style>.cls-1{fill:#0a50fa;fill-rule:evenodd;}</style></defs><title>DM 7</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M185.73,226.47h61.85V144.31h-31V.53H31.07V123.77H84.78a8.15,8.15,0,0,0,8.14-8.14V41.44L123.84,59.3l30.92-17.85V124a20.35,20.35,0,0,1-20.31,20.31H.15v82.15H62V185.39l123.73-.05v41.13Z" transform="translate(-0.15 -0.53)"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 247.4 225.9" style="enable-background:new 0 0 247.4 225.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<title>DM 7</title>
+<g id="Layer_2_1_">
+	<g id="Layer_1-2">
+		<path class="st0" d="M185.6,225.9h61.8v-82.2h-31V0H30.9v123.2h53.7c4.5,0,8.1-3.6,8.1-8.1V40.9l30.9,17.9l30.9-17.9v82.6
+			c0,11.2-9.1,20.3-20.3,20.3H0v82.1h61.8v-41.1l123.7-0.1L185.6,225.9L185.6,225.9z"/>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,700&subset=cyrillic');
+html, body{
+	height: 100%;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Open Sans', sans-serif;
+	background: #0A50FA;
+	color: #fff;
+	min-height: 100%;
+}
+h1, h2{
+	/* margin: 0; */
+}
+#show_video{
+	padding: .5em 2em;
+	background-color: #ff6b0d;
+	color: #fff;
+	display: block;
+	&:hover{
+		background-color: darken(#ff6b0d, 10);
+	}
+}
+#popup{
+	display: none;
+}
+#popup.shown{
+	position: fixed;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.fade{
+		position: absolute;
+		cursor: pointer;
+		background-color: rgba(255,255,255,0.5);
+		top:0;
+		right:0;
+		bottom:0;
+		left:0;
+		z-index: -1;
+	}
+	iframe{
+		z-index: 999;
+	}
+}
+.counter{
+	font-weight: bold;
+	display: block;
+}
+h1{
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	/* font-weight: 900; */
+}
+h2{
+	font-weight: 400;
+}
+.logo{
+	max-width: 20%;
+	margin-right: 2em;
+}
+.title{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	white-space: nowrap;
+	margin-bottom: 2em;
+}
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+@media screen and (max-width:1024px) {
+	.title{
+		flex-direction: column;
+		white-space: normal;
+		text-align: center;
+	}
+	body{
+		padding: 30px 30px 0;
+	}
+	iframe{
+		max-width: 100%;
+	}
+	.logo{
+		margin: 0;
+	}
+}
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}

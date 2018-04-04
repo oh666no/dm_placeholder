@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Start</title>
+	<title>"ДZЕРКАЛО МЕDІА" – Змінюється світ – Змінюємось ми</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,8 +21,11 @@
 			<h2>Відкриття кращого вже <span class="counter">07.04.2018 12:00:00</span></h2>
 		</div>
 	</div>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/amqUxpy9Jfo?rel=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+	<a href="#" id="show_video">Дивитись презентацію</a>
+	<div id="popup">
+		<div class="fade"></div>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/amqUxpy9Jfo?rel=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
 </body>
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.countdown.min.js"></script>
@@ -45,8 +48,10 @@
 		.on('finish.countdown', function(event) {
 			$(this).html('сьогодні')
 				.parent().addClass('disabled');
-
 		});
+	$("#show_video, .fade").click(function(){
+		$("#popup").toggleClass("shown");
+	})
 </script>
 
 </html>
