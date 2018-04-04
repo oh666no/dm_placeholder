@@ -10,6 +10,7 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	background: linear-gradient(to bottom right, #fff, #0A50FA);
 	color: #333;
+	min-height: 100%;
 }
 h1, h2{
 	/* margin: 0; */
